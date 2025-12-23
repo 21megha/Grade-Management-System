@@ -1,0 +1,7 @@
+Grade-Management-System/
+├── README.md # Project overview and setup
+├── src/ # Source code directory
+│ ├── GradeManagementSystem.java # Main program (menu & interaction)
+│ ├── StudentGrade.java # Student grade data class
+│ ├── GradeCalculator.java # Grade calculation utilities
+│ └── ReportGenerator.java # Report generation class

@@ -1,0 +1,54 @@
+## 🧪 Testing Evidence
+
+The Grade Management System was tested using multiple test cases to validate correctness, input handling, and system behavior.  
+Manual testing was performed by providing various user inputs through the console-based menu.
+
+---
+
+### 1. Functional Test Cases
+
+| Test Case ID | Functionality            | Input Provided                                                     | Expected Output                               | Result |
+|-------------|--------------------------|-------------------------------------------------------------------|----------------------------------------------|--------|
+| TC01        | Add Student              | Name: Rahul, Marks: 85, 78, 90, 88, 92                             | Student added successfully                   | Pass   |
+| TC02        | View Students            | No input                                                          | Displays all student records                 | Pass   |
+| TC03        | Calculate Average        | Rahul’s marks                                                     | Correct average displayed                    | Pass   |
+| TC04        | Grade Assignment         | Average = 86                                                      | Grade A                                      | Pass   |
+| TC05        | Search Student (Valid)   | Student Name: Rahul                                               | Displays Rahul’s performance details         | Pass   |
+| TC06        | Search Student (Invalid) | Student Name: Amit                                                | Student not found                            | Pass   |
+| TC07        | Delete Student           | Student Name: Rahul                                               | Student record deleted successfully          | Pass   |
+
+---
+
+### 2. Boundary & Validation Test Cases
+
+| Test Case ID | Scenario                     | Input             | Expected Output                        | Result |
+|-------------|------------------------------|-------------------|----------------------------------------|--------|
+| TC08        | Marks below range            | -10               | Error message / re-entry prompt        | Pass   |
+| TC09        | Marks above range            | 120               | Error message / re-entry prompt        | Pass   |
+| TC10        | Minimum valid marks          | 0                 | Accepted and processed correctly       | Pass   |
+| TC11        | Maximum valid marks          | 100               | Accepted and processed correctly       | Pass   |
+
+---
+
+### 3. Performance Summary Validation
+
+| Student Name | Average Marks | Expected Grade | Actual Grade | Status |
+|-------------|---------------|---------------|--------------|--------|
+| Rahul       | 86            | A             | A            | Pass   |
+| Sneha       | 72            | B             | B            | Pass   |
+| Amit        | 48            | F             | F            | Pass   |
+
+---
+
+### 4. Conclusion
+
+All major functionalities of the Grade Management System were tested successfully.  
+The system correctly handles:
+- Student data storage
+- Average and grade calculation
+- Input validation
+- Search and reporting features  
+
+No critical defects were observed during testing.
+
+---

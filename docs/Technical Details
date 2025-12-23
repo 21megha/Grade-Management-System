@@ -1,0 +1,66 @@
+## 🔧 Technical Details
+
+### 1. System Architecture
+The Grade Management System is a **console-based Java application** designed using a **modular architecture**.  
+Each functionality is separated into dedicated classes to improve readability, maintainability, and scalability.
+
+The system follows a **procedural + object-oriented approach**, where:
+- The main menu and user interaction are handled by the main class.
+- Student data is encapsulated in a data model class.
+- Calculations and report generation are handled using utility classes.
+
+---
+
+### 2. Data Structures Used
+
+- **Arrays**
+  - `String[] studentNames`  
+    Stores names of students.
+  - `double[][] studentMarks`  
+    A 2D array to store marks of multiple students across multiple subjects.
+    - Rows → Students
+    - Columns → Subjects
+
+- **ArrayList (optional enhancement)**
+  - Used in `StudentGrade.java` to dynamically store marks for flexibility.
+
+- **Primitive Data Types**
+  - `int`, `double`, `String` for storing marks, averages, and grades.
+
+---
+
+### 3. Algorithms Implemented
+
+#### a) Average Marks Calculation
+- Sum of marks across all subjects.
+- Average = Total Marks / Number of Subjects.
+- Time Complexity: **O(n)** per student.
+
+#### b) Grade Calculation Algorithm
+Grades are assigned based on average marks:
+- A+ : 90–100  
+- A  : 80–89  
+- B  : 70–79  
+- C  : 60–69  
+- D  : 50–59  
+- F  : Below 50  
+
+Implemented using **conditional (if-else) logic**.
+
+#### c) Highest & Lowest Marks
+- Iterates through subject marks to determine:
+  - Highest score
+  - Lowest score
+- Time Complexity: **O(n)**.
+
+#### d) Search Functionality
+- Linear search is used to find a student by name.
+- Suitable for small to medium datasets.
+- Time Complexity: **O(n)**.
+
+---
+
+### 4. Validation Logic
+
+- Ensures marks entered are within **0–100 range**.
+- Uses loops and exception handling to prevent invalid
